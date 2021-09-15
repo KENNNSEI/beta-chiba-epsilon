@@ -38,10 +38,15 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight text-rampart"><span class="section-title__stage text-rampart">STAGE：1</span>さぁゲームを始めよう！</h2>
-            <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
-              下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
-            <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
-  
+            <p class="text-center">口に入ると食堂には食べ物を運ぶレールがあった<br>
+              レールを沿って食道から胃まで移動する<br>
+              胃には食べ物を消化する工場があった。<br>
+              （ここで謎の人物による胃の機能説明）<br>
+              先ほどよく噛まずに食べた食べ物が大きすぎて消化できず、工場がよく機能しなくなっていた…<br>
+              目の前には石に刺さった剣があった。しかし、剣は呪文を言わないと抜けない仕組みだった。<br>
+              謎を解いて呪文を言い、剣を獲得、食べ物を小さく切り刻んで工場が正常に稼働したことを確認して<br>
+              消化された食べ物が小腸まで運ばれるトロッコと一緒に小腸まで移動しよう！<br>
+            <p class="text-center">ひらがなで解答しよう！困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
             <div class="container">
               <figure class="image__container">
                 <img src="assets/images/stage-1.png" alt="">
@@ -89,10 +94,10 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title text-rampart">STAGE：１  クリア！</div>
-              <div class="clear-message__content">家庭科室の扉が開いた！<br>
-                さぁ先生を助けるため<br>
-                ３つステージの謎をとき、暗号を見つけ出そう！</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btntext-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__content">無事トロッコに乗ることができた！<br>
+                さぁ脱出するため<br>
+                暗号を見つけ出そう！</div>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -110,10 +115,15 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart text-rampart">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight text-rampart"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
+              <p class="text-center">小腸をトロッコに乗って移動する主人公一行。<br>
+                （ここで妖精による小腸の機能説明、説明の途中か始まる前に道が２つあることを会話の中に入れて膵臓の存在を読み手に認識させる）<br>
+                すると突然トロッコが脱線してしまう<br>
+                原因は地面（腸内環境）がガタガタになっていることだった<br>
+                治すにはある一定の比率に則り、主食:副菜:主菜:牛乳・乳製品:果実=7:5:4:2:2）で食べ物を混ぜて<br>
+                ミニマシン（微生物）に食べさせて舗装材を作らなければならないがその比率がわからない<br>
+                しかしマシンを起動させるにはパスワードが必要<br>
+                パスワードを知るにはマシンのタッチパネルに書かれた謎を解かなければならない</p>
             </div>
             <div class="container">
               <figure class="image__container">
@@ -123,7 +133,7 @@ Youtube貼り付けここまで -->
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage text-rampart">STAGE：2</span>キーワードを入力</h2>
+              <h2 class="section-title text-rampart"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
@@ -187,8 +197,10 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title text-rampart">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">謎を解いた主人公一行<br>
+                マシンがどんどん道を治していく<br>
+                トロッコをレールに乗せて小腸の道をもう一度走る主人公たち<br>
+                </div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -204,9 +216,15 @@ Youtube貼り付けここまで -->
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart">STAGE：3</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <p class="text-center">大腸を出れば体の外に出れると説明する謎の人物<br>
+              大腸まで来た主人公一行<br>
+              原因不明のつまりを起こして太くなった食べ物を便にしていく機械のパイプのせいで行き止まりになっていた<br>
+              機械なら説明書くらいどこかにあるはずだと解決策を探す主人公たち<br>
+              コンピューター的なものがエラー表示を出していることを見つける<br>
+              コンピューターが示す機械に必要なものを示す欄がバグで見えなくなっている<br>
+              必要なものが分かれば自分の魔法でどうにかできるかもしれないと言う謎の人物<br>
+              足下を見ると謎の書かれた紙切れが一枚落ちていた<br>
+              </p>
             <figure class="image__container">
               <img src="assets/images/stage-3.png" alt="">
             </figure>
@@ -224,7 +242,7 @@ Youtube貼り付けここまで -->
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1)"></answer-input>
-            <a class="link-hint" href="hint3.html" target="hint3">ヒントをみる ></a>
+            <a class="link-hint text-rampart" href="hint3.html" target="hint3">ヒントをみる ></a>
           </div>
         </section>
         <!-- STAGE3-1解答入力セクション　ここまで -->
@@ -275,10 +293,16 @@ STAGE3-3追加　ここまで -->
         <section v-if="clear['stage3']" v-bind:class="{isClear:clear['stage3']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
-                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <div class="clear-message__title text-rampart">STAGE：3　クリア！</div>
+              <div class="clear-message__content">謎を解く必要なものが水分だとわかる主人公たち<br>
+                大腸の機能と水不足で便秘になっていたこと主人公に教える謎の人物<br>
+                謎の人物の魔法で水を作り出してパイプのつまりを治す<br><br>
+
+                しかし、外へ出ても元の世界に帰る魔法が発動しない何か見落としがあったのではないかと言う謎の人物<br>
+                小腸を走っている時に２つに道が分かれていたことを思い出す主人公<br>
+                残り時間はあと20分、急いでもう一度体に入り直す主人公一行<br>
+                </div>
+                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -293,10 +317,13 @@ STAGE3-3追加　ここまで -->
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart">STAGE：4</span>家庭科室の課題とは</h2>
-            <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
-              どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
-              これらを解決するための最後の謎を解いていこう！</p>
+            <h2 class="section-title section-title--keycolorlight text-rampart"><span class="section-title__stage">STAGE：4</span>家庭科室の課題とは</h2>
+            <p class="text-center">
+              小腸の分かれ道から膵臓まで来た主人公一行<br>
+              膵臓の部屋がインスリンで水浸しになっている。<br>
+              緊急用と書かれたパスワード式の鍵がかかった箱を発見<br>
+              謎を解いていこう
+              </p>
             <figure class="image__container">
               <img src="assets/images/stage-4.png" alt="">
             </figure>
@@ -314,7 +341,7 @@ STAGE3-3追加　ここまで -->
               4番目の引数 'final' は最終ステージを表します。
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage4']['q1']" v-on:answer-input="answerInput($event, 'stage4', 1, 'final')"></answer-input>
-            <a class="link-hint" href="hint4.html" target="hint4">ヒントをみる ></a>
+            <a class="link-hint text-rampart" href="hint4.html" target="hint4">ヒントをみる ></a>
           </div>
         </section>
         <!-- STAGE3-1解答入力セクション　ここまで -->
