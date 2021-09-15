@@ -7,6 +7,10 @@
   <title>封鎖された家庭科室からの脱出 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -33,7 +37,7 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
+            <h2 class="section-title section-title--keycolorlight text-rampart"><span class="section-title__stage text-rampart">STAGE：1</span>さぁゲームを始めよう！</h2>
             <p class="text-center">まずは、この学校の家庭科室の鍵のありかを知らなければ入ることができない。<br>
               下の画像の謎を解き、鍵のありかをキーワード欄に入力しよう。</p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
@@ -59,7 +63,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE1解答入力セクション　ここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
+            <h2 class="section-title text-rampart"><span class="section-title__stage">STAGE：1</span>キーワードを入力</h2>
             <!------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。入力欄・送信ボタン・エラーメッセージを表示します。
               v-bind:correct="correctAnswer['stage1']['q1']" は正解の解答を指します。
@@ -70,7 +74,7 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
 
-            <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
+            <a class="link-hint text-rampart" href="hint1.html" target="hint1">ヒントをみる ></a>
           </div>
         </section>
         <!-- STAGE1解答入力セクション　ここまで -->
@@ -84,11 +88,11 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
+              <div class="clear-message__title text-rampart">STAGE：１  クリア！</div>
               <div class="clear-message__content">家庭科室の扉が開いた！<br>
                 さぁ先生を助けるため<br>
                 ３つステージの謎をとき、暗号を見つけ出そう！</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btntext-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -106,7 +110,7 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart text-rampart">STAGE：2</span>黒板に書かれている謎を解け！</h2>
               <p class="text-center">家庭科室に入ることができた！<br>
                 すぐに目に入ったのは黒板にある４つの謎。<br>
                 これらを解くことで、きっと次のステップに繋がるはずだ！</p>
@@ -119,7 +123,7 @@ Youtube貼り付けここまで -->
           </div>
           <div class="stage-column__container section bg-color--keycolor">
             <div class="container">
-              <h2 class="section-title"><span class="section-title__stage">STAGE：2</span>キーワードを入力</h2>
+              <h2 class="section-title"><span class="section-title__stage text-rampart">STAGE：2</span>キーワードを入力</h2>
               <!-------------------------------------------------------------
                 class名"row"内のclass名"column"が横並びになります。
                 改行する場合は以下のように追加してください。
@@ -137,7 +141,7 @@ Youtube貼り付けここまで -->
                   <!-- STAGE2-1問題セクション　ここまで -->
                   <!-- STAGE2-1解答入力セクション　ここから -->
                   <answer-input v-bind:correct="correctAnswer['stage2']['q1']" v-on:answer-input="answerInput($event, 'stage2', 1)"></answer-input>
-                  <a class="link-hint" href="hint2.html" target="hint2">ヒントをみる ></a>
+                  <a class="link-hint text-rampart" href="hint2.html" target="hint2">ヒントをみる ></a>
                   <!-- STAGE2-1解答入力セクション　ここまで -->
                 </div><!-- /.column -->
                 <!-- STAGE2-1　ここまで -->
@@ -182,10 +186,10 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage2']" v-bind:class="{isClear:clear['stage2']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：2　クリア！</div>
+              <div class="clear-message__title text-rampart">STAGE：2　クリア！</div>
               <div class="clear-message__content">黒板の指示に従い、<br>
                 次のステージの謎を解こう！</div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -199,7 +203,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>家庭科室の課題とは</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart">STAGE：3</span>家庭科室の課題とは</h2>
             <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
               どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
               これらを解決するための最後の謎を解いていこう！</p>
@@ -213,7 +217,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE3-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：3</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage text-rampart">STAGE：3</span>キーワードを入力</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
@@ -289,7 +293,7 @@ STAGE3-3追加　ここまで -->
         <!-- STAGE4-1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>家庭科室の課題とは</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage text-rampart">STAGE：4</span>家庭科室の課題とは</h2>
             <p class="text-center">黒板から得たメッセージは、「食物の廃棄問題」だった。<br>
               どうやら、廃棄にかかる費用がかかりすぎて小学校の運営が厳しくなったようだ。。<br>
               これらを解決するための最後の謎を解いていこう！</p>
@@ -303,7 +307,7 @@ STAGE3-3追加　ここまで -->
         <!-- STAGE3-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：4</span>キーワードを入力</h2>
+            <h2 class="section-title"><span class="section-title__stage text-rampart">STAGE：4</span>キーワードを入力</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。

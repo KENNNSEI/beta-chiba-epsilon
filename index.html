@@ -7,6 +7,12 @@
   <title>体内からの脱出 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -25,9 +31,9 @@
     <!-- タイトルエリア　ここから -->
     <h1 class="main-title"><img src="assets/images/top-image.png" alt="Presented by SCRAP×N・S高リアル脱出ゲーム制作PJ 封鎖された家庭科室からの脱出"></h1>
     <!-- タイトルエリア　ここまで -->
-    <section class="section section--story">
+    <section class="section section--story" data-aos="fade-up" data-aos-duration="3000" ">
       <div class="container">
-        <h2 class="section-title section-title--keycolor section-title--story">ストーリー</h2>
+        <h2 class="section-title section-title--keycolor section-title--story text-rampart" >ストーリー</h2>
         <div class="story">
           <p class="text-center">男の子が給食を食べている。<br>
             野菜と牛乳を残し、肉は大盛り、プリンは三つ食べているようだ...<br>　
@@ -42,7 +48,7 @@
     </section>
     <section class="section bg-color--gray">
       <div class="container">
-        <h2 class="section-title">ゲーム開始前の準備</h2>
+        <h2 class="section-title text-rampart">ゲーム開始前の準備</h2>
         <p class="font-eng text-center">Are you ready for game?</p>
         <!--
           class名"row"内のclass名"column"が横並びになります。
@@ -54,19 +60,19 @@
           </div>
         -->
         <div class="row">
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top-top">
             <div class="card">
               <h3 class="card__title">遊ぶ日時を決めよう！</h3>
               <p class="card__content">前後の説明、解説をあわせ、想定所要時間は100分〜120分です。途中で中断することもできますが、お時間に余裕があるときにご参加ください。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100" data-aos-anchor-placement="top-top">
             <div class="card">
               <h3 class="card__title">紙とペンを用意しよう！</h3>
               <p class="card__content">メモをとるための紙と筆記用具をお手元にご準備ください。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100" data-aos-anchor-placement="top-top">
             <div class="card">
               <h3 class="card__title">ブラウザのCookieとキャッシュを<br>削除しよう！</h3>
               <p class="card__content">エラーが起きる原因となる恐れがありますので、必ずCookieとキャッシュを削除してからプレイを開始するようにしてください。</p>
@@ -77,10 +83,10 @@
     </section>
     <section class="section bg-color--keycolor">
       <div class="container">
-        <h2 class="section-title">複数人での遊び方</h2>
+        <h2 class="section-title text-rampart">複数人での遊び方</h2>
         <p class="font-eng text-center">Playing games with multiple players</p>
         <div class="row">
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top-center">
             <div class="card">
               <h3 class="card__title">コミュニケーションツール<br>を用意！</h3>
               <p class="card__content">例：Zoom、LINE通話など<br>
@@ -88,7 +94,7 @@
                 ただ、離れたところにいる仲間と同じ会場で謎解きをしている気持ちになれるので、カメラをオンにしてみんなでわいわいプレイをすることをお勧めします。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200" data-aos-anchor-placement="top-center">
             <div class="card">
               <h3 class="card__title">イヤホンを使おう！</h3>
               <p class="card__content">本ゲームでは、登場人物が会話する動画を見ながら謎解きをします。<br>
@@ -96,7 +102,7 @@
                 ※イヤホンを使用しない場合は、音声をマイクが拾ってしまわないように、動画の再生中は通話ツールのミュート機能をご利用ください。</p>
             </div>
           </div>
-          <div class="column">
+          <div class="column" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" data-aos-anchor-placement="top-center">
             <div class="card">
               <h3 class="card__title">情報共有はしっかりと！</h3>
               <p class="card__content">遠くにいる仲間と足並みを揃えて遊びましょう。<br>
@@ -106,9 +112,9 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300" data-aos-anchor-placement="top-center">
       <div class="container">
-        <a class="btn" href="main.html">準備OK？では、ゲームスタート！！！<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
+        <a class="btn text-rampart" href="main.html">準備OK？では、ゲームスタート！！！<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
       </div>
     </section>
   </main>
@@ -119,5 +125,8 @@
       <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
     </div>
   </footer>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
