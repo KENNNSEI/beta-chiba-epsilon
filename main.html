@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>封鎖された家庭科室からの脱出 │ Project N</title>
+  <title>人体からの脱出 │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -21,13 +23,13 @@
   </svg>
   <header class="header">
     <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <!-- <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div> -->
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
-    <h1 class="main-title"><img src="assets/images/main-image.png" alt="封鎖された家庭科室からの脱出"></h1>
+    <h1 class="main-title"><img src="assets/images/top-image.png" alt="封鎖された家庭科室からの脱出"></h1>
     <!-- タイトルエリア　ここまで -->
     <div id="stage">
 
@@ -47,7 +49,7 @@
               謎を解いて呪文を言い、剣を獲得、食べ物を小さく切り刻んで工場が正常に稼働したことを確認して<br>
               消化された食べ物が小腸まで運ばれるトロッコと一緒に小腸まで移動しよう！<br>
             <p class="text-center">ひらがなで解答しよう！困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
-            <div class="container">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
               <figure class="image__container">
                 <img src="assets/images/stage-1.png" alt="">
               </figure>
@@ -391,7 +393,9 @@ STAGE3-3追加　ここまで -->
           
       </div>
       <!-- STAGE3　ここまで -->
-
+      <!-- <div>
+        <h2 class="text-center"><span id="hour"></span>時間<span id="min"></span>分<span id="sec"></span>秒</h2>
+      </div> -->
     </div>
   </main>
   <footer class="footer section bg-color--gray">
@@ -403,5 +407,9 @@ STAGE3-3追加　ここまで -->
   </footer>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
