@@ -5,3 +5,34 @@
   text-align: center;
   margin: auto;
 }
+
+.start {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9998;
+  width: 80%;
+}
+
+.start div {
+  position: fixed;
+  /* left: 65%; */
+  left: -50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 50%;
+}
