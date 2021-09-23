@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet"> 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 </head>
 <body>
   <svg width="0" height="0" class="hidden">
@@ -23,7 +25,7 @@
   </svg>
   <header class="header">
     <div class="container">
-      <!-- <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div> -->
+      <div class="header__logo"><img src="assets/images/logo.png" alt="チームロゴ"></div>
       <div class="header__name">N・S高生制作サイト</div>
     </div>
   </header>
@@ -35,7 +37,7 @@
 
       <!-- STAGE1　ここから -->
       <div id="sectionStage1" class="stage">
-        
+
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
@@ -112,7 +114,7 @@ Youtube貼り付けここまで -->
 
         <!-- STAGE1クリア画面　ここから -->
         <!------------------------------------------------------------------------------------------------------
-          ステージを全問正解するとclear['stage1']がtrusになります。
+          ステージを全問正解するとclear['stage1']がtrueになります。
           v-if="clear['stage1']"はclear['stage1']がtrueになったら表示します。
           v-bind:class="{isClear:clear['stage1']}"はclear['stage1']がtrueになったら「isClear」クラスを追加します。
         -------------------------------------------------------------------------------------------------------->
@@ -123,7 +125,7 @@ Youtube貼り付けここまで -->
               <div class="clear-message__content">無事トロッコに乗ることができた！<br>
                 さぁ脱出するため<br>
                 暗号を見つけ出そう！</div>
-              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+              <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn text-rampart btn-animation1">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -145,8 +147,8 @@ Youtube貼り付けここまで -->
               <p class="text-center">小腸をトロッコに乗って移動する主人公一行。<br>
                 （ここで妖精による小腸の機能説明、説明の途中か始まる前に道が２つあることを会話の中に入れて膵臓の存在を読み手に認識させる）<br>
                 すると突然トロッコが脱線してしまう<br>
-                原因は地面（腸内環境）がガタガタになっていることだった<br>
-                治すにはある一定の比率に則り、主食:副菜:主菜:牛乳・乳製品:果実=7:5:4:2:2）で食べ物を混ぜて<br>
+                原因は地面（腸内環境）がガタガタになっていることだった。<br><br>
+                治すにはある一定の比率に則り、<b>主食:副菜:主菜:牛乳・乳製品:果実=7:5:4:2:2</b>で食べ物を混ぜて<br>
                 ミニマシン（微生物）に食べさせて舗装材を作らなければならないがその比率がわからない<br>
                 しかしマシンを起動させるにはパスワードが必要<br>
                 パスワードを知るにはマシンのタッチパネルに書かれた謎を解かなければならない</p>
@@ -227,7 +229,7 @@ Youtube貼り付けここまで -->
                 マシンがどんどん道を治していく<br>
                 トロッコをレールに乗せて小腸の道をもう一度走る主人公たち<br>
                 </div>
-                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+                <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn text-rampart btn-animation2">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -328,7 +330,7 @@ STAGE3-3追加　ここまで -->
                 小腸を走っている時に２つに道が分かれていたことを思い出す主人公<br>
                 残り時間はあと20分、急いでもう一度体に入り直す主人公一行<br>
                 </div>
-                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn text-rampart">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
+                <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn text-rampart btn-animation3">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
         </section>
@@ -429,8 +431,22 @@ STAGE3-3追加　ここまで -->
         <p class="text-center">株式会社SCRAPとN・S高で実施した授業「リアル脱出ゲームの作り方」の一環で<br>生徒が制作したものであり、SCRAPが主催/公認するものではありません。</p>
     </div>
   </footer>
+  <div class="start-m">
+    <p><img src="assets/images/aniS-0.png" alt=""></p>
+  </div>
+  <div id="ani">
+    <p><img src="assets/images/aniS-1.png" alt="" class="aniHide"></p>
+  </div>
+  <div id="ani-1">
+    <div><img src="assets/images/aniS-20.png" alt="" class="rail"></div>
+    <p><img src="assets/images/aniS-1.png" alt="" class="aniHide-1"></p>
+  </div>
+  <div id="ani-2">
+    <p><img src="assets/images/aniS-01.png" alt=""></p>
+  </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/main-animation.js"></script>
   <script>
     AOS.init();
   </script>
